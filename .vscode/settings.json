@@ -1,0 +1,13 @@
+{
+  "editor.formatOnSave": true,
+  "editor.insertSpaces": true,
+  "files.exclude": {
+    "target/": true
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}

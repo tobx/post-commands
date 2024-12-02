@@ -1,0 +1,46 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Rust: cargo build",
+      "type": "shell",
+      "command": "cargo build",
+      "options": {
+        "env": {
+          "LOG_LEVEL": "debug"
+        }
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Rust: cargo run",
+      "type": "shell",
+      "command": "cargo run -- --config-dir \"${workspaceFolder}/test/server\"",
+      "options": {
+        "env": {
+          "LOG_LEVEL": "debug"
+        }
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Rust: cargo watch -x run",
+      "type": "shell",
+      "command": "${workspaceFolder}/test/watch.sh",
+      "problemMatcher": []
+    },
+    {
+      "label": "Rust: cargo watch -x test",
+      "type": "process",
+      "command": "cargo",
+      "args": ["watch", "--clear", "--watch", "./server", "--exec", "test"],
+      "problemMatcher": []
+    },
+    {
+      "label": "Rust: cargo clippy",
+      "type": "shell",
+      "command": "cargo clippy --quiet -- -W clippy::pedantic -W clippy::perf",
+      "problemMatcher": []
+    }
+  ]
+}

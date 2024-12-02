@@ -1,0 +1,8 @@
+[command]
+directory = "/var/local/post-commands"
+file_extension = "sh"
+
+[http]
+address = "0.0.0.0"
+cors = false
+port = 2180
