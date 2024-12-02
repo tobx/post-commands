@@ -1,5 +1,5 @@
 [command]
-directory = "/var/local/post-commands"
+directory = "/usr/local/etc/post-commands/commands"
 file_extension = "sh"
 
 [http]
