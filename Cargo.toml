@@ -11,6 +11,7 @@ repository = "https://github.com/tobx/post-commands"
 license = "MIT OR Apache-2.0"
 categories = ["web-programming"]
 keywords = ["command", "remote"]
+exclude = [".editorconfig", ".vscode/", "test/"]
 
 [dependencies]
 axum = "0.7.7"
