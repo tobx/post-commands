@@ -7,9 +7,9 @@ description = """
 execute preconfigured commands via HTTP post requests
 """
 readme = "README.md"
-homepage = "https://github.com/tobx/post-commands"
 repository = "https://github.com/tobx/post-commands"
-license = "MIT"
+license = "MIT OR Apache-2.0"
+categories = ["web-programming"]
 
 [dependencies]
 axum = "0.7.7"
