@@ -6,6 +6,6 @@ use clap::Parser;
 #[command(version, about)]
 pub struct Args {
     /// Config directory
-    #[arg(long, value_name = "DIR")]
-    pub config_dir: Option<PathBuf>,
+    #[arg(long, value_name = "FILE")]
+    pub config_file: PathBuf,
 }

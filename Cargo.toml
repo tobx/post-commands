@@ -1,6 +1,6 @@
 [package]
 name = "post-commands"
-version = "0.1.1"
+version = "0.1.2"
 authors = ["Tobias Strobel <code@tobx.de>"]
 edition = "2021"
 description = """

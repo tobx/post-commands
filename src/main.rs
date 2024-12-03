@@ -25,7 +25,7 @@ fn init_logger() {
 
 async fn run() -> crate::Result<()> {
     let args = Args::parse();
-    let config = Config::load(args.config_dir.as_deref())?;
+    let config = Config::load(&args.config_file)?;
     app::run(&config).await?;
     Ok(())
 }
