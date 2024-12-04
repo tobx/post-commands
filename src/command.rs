@@ -31,7 +31,7 @@ impl Error {
 #[derive(Deserialize)]
 pub struct Spec {
     name: String,
-    args: Vec<String>,
+    args: Option<Vec<String>>,
 }
 
 pub struct Manager {
@@ -58,7 +58,11 @@ impl Manager {
         let path = self
             .find_matching_path(&spec.name)?
             .ok_or(Error::NotFound)?;
-        Command::spawn(Command::new(path).args(spec.args))?;
+        let mut command = Command::new(path);
+        if let Some(args) = spec.args {
+            command.args(args);
+        }
+        Command::spawn(&mut command)?;
         Ok(())
     }
 
