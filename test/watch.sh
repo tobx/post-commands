@@ -2,7 +2,7 @@
 
 self_dir=$(dirname -- "$0")
 
-cargo watch --clear --watch "${self_dir}/server" --exec "run -- --config-dir \"${self_dir}/server\"" &
+cargo watch --clear --watch "${self_dir}/server" --exec "run -- --config-file \"${self_dir}/server/config.toml\"" &
 
 cargo_pid=$!
 

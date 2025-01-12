@@ -15,7 +15,7 @@
     {
       "label": "Rust: cargo run",
       "type": "shell",
-      "command": "cargo run -- --config-dir \"${workspaceFolder}/test/server\"",
+      "command": "cargo run -- --config-file \"${workspaceFolder}/test/server/config.toml\"",
       "options": {
         "env": {
           "LOG_LEVEL": "debug"
