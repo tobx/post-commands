@@ -14,12 +14,12 @@ keywords = ["command", "remote"]
 exclude = [".editorconfig", ".vscode/", "test/"]
 
 [dependencies]
-axum = "0.7.7"
-clap = { version = "4.5.21", features = ["derive"] }
-config = "0.14.0"
-env_logger = "0.11.5"
+axum = "0.8.1"
+clap = { version = "4.5.26", features = ["derive"] }
+config = "0.15.5"
+env_logger = "0.11.6"
 log = "0.4.22"
-serde = "1.0.215"
-thiserror = "2.0.3"
-tokio = "1.41.1"
-tower-http = { version = "0.6.1", features = ["cors", "trace"] }
+serde = "1.0.217"
+thiserror = "2.0.11"
+tokio = "1.43.0"
+tower-http = { version = "0.6.2", features = ["cors", "trace"] }
